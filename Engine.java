@@ -39,7 +39,7 @@ public class Engine {
       System.out.print(" ");
       for (int col = 0; col < BOARD_SIZE; col++) {
         System.out.print(board[row][col]);
-        if (col < 2)
+        if (col < 2)`
           System.out.print("|");
       }
       System.out.println();
@@ -52,7 +52,7 @@ public class Engine {
   // TODO: Complete this method
   // Player is either 0 or 1, row and column are valid and empty
   public void playerTurn(int player, int row, int col) {
-    return;
+	  board[row][col] = symbols[player];
   }
 
   // TODO: Complete this method
